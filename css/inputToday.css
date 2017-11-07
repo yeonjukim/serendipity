@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+#select {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  position: absolute;
+  top: 5px;
+  left: 270px;
+  color: white;
+  font-family: 'Jeju Gothic', serif;
+  font-size: 45px;
+}
+
+#back {
+  width: 1464px;
+  height: 824px;
+}
+
+#inputNum {
+  position: absolute;
+  left: 810px;
+  bottom: 250px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#submit {
+  position: absolute;
+  left: 1000px;
+  bottom: 250px;
+  height: 45px;
+  font-size: 20px;
+}
