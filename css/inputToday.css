@@ -11,15 +11,15 @@
 #title {
   position: absolute;
   top: 5px;
-  left: 270px;
+  left: 420px;
   color: white;
   font-family: 'Jeju Gothic', serif;
   font-size: 45px;
 }
 
 #back {
-  width: 1464px;
-  height: 824px;
+  width: 1200px;
+  height: 800px;
 }
 
 #inputNum {
