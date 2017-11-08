@@ -20,8 +20,6 @@ var req = new XMLHttpRequest();
   };
   req.send();
 
-
-
   $.getJSON('json/luck.json', function(data) {
        var str = '';
        $.each(data, function(entryIndex, entry) {
@@ -39,9 +37,14 @@ var req = new XMLHttpRequest();
 
        var selectedCard = data[num-1];
        str += '<h5 id="cardName">'+selectedCard.title+'</h5>'
-       str += '<img id="card" src="'+selectedCard.image+'">'
-       str += '<span id="explain">'+selectedCard.content+'</span>'
+       str += '<div id="fadeIn"><img id="card" src="'+selectedCard.image+'">'
+       str += '<span id="explain">'+selectedCard.content+'</span></div>'
        console.log(selectedCard);
 
        box.innerHTML += str;
+
+       $(document).ready(function() {
+         $('#fadeIn').hide();
+         $('#fadeIn').fadeIn(1000);
+       });
      });

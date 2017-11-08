@@ -8,7 +8,7 @@ console.log(num);
 
 var req = new XMLHttpRequest();
 
-  req.open('GET', 'json/luck.json', true);
+  req.open('GET', 'json/love.json', true);
 
   req.onreadystatechange=function(){
     if(req.status==200){
@@ -20,9 +20,7 @@ var req = new XMLHttpRequest();
   };
   req.send();
 
-
-
-  $.getJSON('json/luck.json', function(data) {
+  $.getJSON('json/love.json', function(data) {
        var str = '';
        $.each(data, function(entryIndex, entry) {
          for(i=0; i<=77; i++){
@@ -39,9 +37,15 @@ var req = new XMLHttpRequest();
 
        var selectedCard = data[num-1];
        str += '<h5 id="cardName">'+selectedCard.title+'</h5>'
-       str += '<img id="card" src="'+selectedCard.image+'">'
-       str += '<span id="explain">'+selectedCard.content+'</span>'
+       str += '<div id="fadeIn"><img id="card" src="'+selectedCard.image+'">'
+       str += '<span id="explain">'+selectedCard.content+'</span></div>'
        console.log(selectedCard);
 
        box.innerHTML += str;
+
+       $(document).ready(function() {
+         $('#fadeIn').hide();
+         $('#fadeIn').fadeIn(1000);
+       });
+
      });

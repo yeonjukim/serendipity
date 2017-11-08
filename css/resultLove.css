@@ -2,8 +2,6 @@
 
 #box {
   position: relative;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -21,24 +19,38 @@
   width: 1200px;
   height: 800px;
 }
+#fadeIn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
 
 #cardName {
   position: absolute;
   top: 50px;
-  align: center;
+  align:center;
   color: white;
+  font-family: 'Jeju Gothic', serif;
   font-size: 30px;
 }
 
 #card {
   position: absolute;
   top: 150px;
+  width: 200px;
+  height: 350px;
   align:center;
-
 }
 
 #explain {
   position: absolute;
-  bottom: 0px;
+  top: 550px;
   align: center;
+  width: 500px;
+  background-color: white;
+  color: inherit;
+  opacity: 0.6;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Jeju Gothic', serif;
 }

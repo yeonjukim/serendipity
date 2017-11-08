@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
 .main {
   position: relative;
   display: flex;
@@ -6,7 +8,7 @@
 
 #name {
   position: absolute;
-  top: 0px;
+  top: 30px;
   align:center;
   color: white;
   width: 500px;
@@ -16,16 +18,20 @@
 
 #todayLuck {
   position: absolute;
+  padding-top: 10px;
   bottom: 200px;
   left: 300px;
-  font-size: 50px;
+  font-family: 'Jeju Gothic', serif;
+  font-size: 45px;
 }
 
 #loveLuck {
   position: absolute;
+  padding-top: 10px;
   bottom: 200px;
   left: 800px;
-  font-size: 50px;
+  font-family: 'Jeju Gothic', serif;
+  font-size: 45px;
 }
 
 .intro {

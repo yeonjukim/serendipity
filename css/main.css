@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
 .main {
   position: relative;
@@ -8,7 +9,7 @@
 
 #name {
   position: absolute;
-  top: 0px;
+  top: 30px;
   align : center;
   color: white;
   width: 500px;
@@ -18,8 +19,10 @@
 
 #start {
   position: absolute;
+  padding-top: 10px;
   bottom: 200px;
   left: 600px;
+  font-family: 'Jeju Gothic', serif;
   font-size: 50px;
 }
 
