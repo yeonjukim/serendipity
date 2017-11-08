@@ -27,6 +27,7 @@
   top: 50px;
   align: center;
   color: white;
+  font-family: 'Jeju Gothic', serif;
   font-size: 30px;
 }
 
@@ -34,6 +35,8 @@
   position: absolute;
   top: 150px;
   align:center;
+  width: 200px;
+  height: 350px;
 
 }
 
