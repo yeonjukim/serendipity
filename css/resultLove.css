@@ -11,7 +11,7 @@
 #title {
   position: absolute;
   top: 5px;
-  left: 420px;
+  left: 100px;
   color: white;
   font-family: 'Jeju Gothic', serif;
   font-size: 45px;
@@ -20,4 +20,25 @@
 #back {
   width: 1200px;
   height: 800px;
+}
+
+#cardName {
+  position: absolute;
+  top: 50px;
+  align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#card {
+  position: absolute;
+  top: 150px;
+  align:center;
+
+}
+
+#explain {
+  position: absolute;
+  bottom: 0px;
+  align: center;
 }

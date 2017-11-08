@@ -2,8 +2,6 @@
 
 #select {
   position: relative;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -11,7 +9,7 @@
 #title {
   position: absolute;
   top: 5px;
-  left: 420px;
+  left: 200px;
   color: white;
   font-family: 'Jeju Gothic', serif;
   font-size: 45px;
@@ -19,21 +17,31 @@
 
 #back {
   width: 1200px;
-  height: 800px;
+  height: 700px;
 }
 
 #inputNum {
   position: absolute;
-  left: 810px;
-  bottom: 250px;
+  left: 580px;
+  bottom: 10px;
   height: 40px;
   font-size: 20px;
 }
 
 #submit {
   position: absolute;
-  left: 1000px;
-  bottom: 250px;
+  left: 770px;
+  bottom: 10px;
   height: 45px;
   font-size: 20px;
+}
+
+#sentence {
+  position: absolute;
+  top: 300px;
+  align : center;
+  background-color: white;
+  color: inherit;
+  opacity: 0.7;
+  padding: 20px;
 }
