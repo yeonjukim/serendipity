@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Serendipity</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <script>
+  $(function() {
+
+    $('#form').submit(function() {
+      var inputVal = $("#inputNum").val()
+      if (inputVal && isNumeric(inputVal)) {
+        if (inputVal <= 78 && inputVal > 0) {
+          $("#form").attr("action", "resultToday.html");
+          $("#form").submit();
+        } else {
+          alert("1부터 78까지 숫자를 입력해주세요!");
+        }
+      } else {
+        alert("숫자를 입력해 주십시오.");
+        return false;
+      }
+    });
+
+  });
+
+  function isNumeric(Num) {
+    var result = false;
+    if (!isNaN(parseInt(Num))) {
+      result = true;
+    }
+    return result;
+  }
+</script>
+</head>
+
+<body>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/constellation.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <div class="post-heading custom-title">
+            <h1>Serendipity</h1>
+            <h3 class="subheading">♣︎ 오늘의 운세 ♣︎</h3>
+            <img id="backCard" src="img/cardImage.png" alt="">
+            <h3 id="sentence" class="subheading p-center">1부터 78까지의 숫자 중 하나를 입력하세요.</h3>
+            <span class="meta">
+              <form id="form">
+                <input id="inputNum" type="text" name="num" size="14" placeholder="숫자를 입력하세요">
+                <input id="submit" type="submit" name="sub" value="입력">
+              </form></span>
+              <a class="btn btn-primary center-btn custom-color" href="index.html">Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/yeonjukim/serendipity">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; serendipity 2017</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sentence').hide();
+      $('#backCard').hide();
+      $('#backCard').fadeIn(1000);
+      $('#sentence').fadeIn(1000);
+
+    });
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

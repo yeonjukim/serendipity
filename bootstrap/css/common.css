@@ -1,0 +1,15 @@
+.center-btn {
+    position: relative;
+    top: 80px;
+}
+.custom-color{
+  background-color: rgb(7, 89, 177);
+}
+.p-center {
+  text-align: center;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+.custom-title {
+      padding-top: 100px !important;
+}
