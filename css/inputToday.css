@@ -2,6 +2,8 @@
 
 #select {
   position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -9,7 +11,7 @@
 #title {
   position: absolute;
   top: 5px;
-  left: 100px;
+  left: 420px;
   color: white;
   font-family: 'Jeju Gothic', serif;
   font-size: 45px;
@@ -17,42 +19,21 @@
 
 #back {
   width: 1200px;
-  height: 700px;
-}
-
-#backCard {
-  position: absolute;
-  top: 150px;
-  align: center;
+  height: 800px;
 }
 
 #inputNum {
   position: absolute;
-  left: 530px;
-  bottom: 10px;
+  left: 810px;
+  bottom: 250px;
   height: 40px;
-  text-align: center;
   font-size: 20px;
-  font-family: 'Jeju Gothic', serif;
 }
 
 #submit {
   position: absolute;
-  left: 750px;
-  bottom: 10px;
-  height: 40px;
+  left: 1000px;
+  bottom: 250px;
+  height: 45px;
   font-size: 20px;
-  font-family: 'Jeju Gothic', serif;
-}
-
-#sentence {
-  position: absolute;
-  top: 250px;
-  align : center;
-  background-color: white;
-  font-family: 'Jeju Gothic', serif;
-  color: inherit;
-  font-size: 20px;
-  opacity: 0.8;
-  padding: 20px;
 }

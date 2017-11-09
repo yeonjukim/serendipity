@@ -1,16 +1,16 @@
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
 .main {
   position: relative;
-
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 #name {
   position: absolute;
-  top: 30px;
-  align : center;
+  top: 0px;
+  left: 720px;
   color: white;
   width: 500px;
   font-family: 'Pacifico', cursive;
@@ -19,17 +19,15 @@
 
 #start {
   position: absolute;
-  padding-top: 10px;
-  bottom: 200px;
-  left: 600px;
-  font-family: 'Jeju Gothic', serif;
+  bottom: 300px;
+  left: 900px;
   font-size: 50px;
 }
 
 .intro {
   position: absolute;
   top: 300px;
-  align : center;
+  left: 700px;
   background-color: white;
   color: inherit;
   opacity: 0.7;
