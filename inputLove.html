@@ -5,17 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/inputLove.css">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>숫자 입력</title>
 </head>
 <body>
   <div id="select">
     <h3 id="title">연애운</h3>
-    <img id="back" src="images/background.jpg" alt="">
+    <img id="back" src="images/orora.jpg" alt="">
+    <img id="backCard" src="images/cardImage.png" alt="">
+    <p id="sentence">1부터 78까지의 숫자 중 하나를 입력하세요.</p>
   </div>
+
   <form action="resultLove.html">
-    <input id="inputNum" type="text" name="num" size="14" placeholder="숫자를 입력하세요">
-    <input id="submit" type="submit" name="sub" value="확인">
+    <input id="inputNum" type="text" name="num" size="20" placeholder="숫자를 입력하세요">
+    <input class="btn btn-default" id="submit" type="submit" name="sub" value="확인">
   </form>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sentence').hide();
+      $('#backCard').hide();
+      $('#backCard').fadeIn(1000);
+      $('#sentence').fadeIn(1000);
+
+    });
+  </script>
 </body>
 </html>

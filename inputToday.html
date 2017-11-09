@@ -29,7 +29,9 @@ $(function () {
 <body>
   <div id="select">
     <h3 id="title">오늘의 운세</h3>
-    <img id="back" src="images/background.jpg" alt="">
+    <img id="back" src="images/constellation.jpg" alt="">
+    <img id="backCard" src="images/cardImage.png" alt="">
+    <p id="sentence">1부터 78까지의 숫자 중 하나를 입력하세요.</p>
   </div>
 
   <form id="form">
@@ -37,5 +39,14 @@ $(function () {
     <input class="btn btn-default" id="submit" type="submit" name="sub" value="확인">
   </form>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sentence').hide();
+      $('#backCard').hide();
+      $('#backCard').fadeIn(1000);
+      $('#sentence').fadeIn(1000);
+
+    });
+  </script>
 </body>
 </html>
