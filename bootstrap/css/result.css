@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   height: 800px;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
 }
 
 #title {
@@ -48,12 +48,12 @@
   position: absolute;
   top: 550px;
   align: center;
-  width: 500px;
+  width: 800px;
   background-color: white;
   color: inherit;
   opacity: 0.6;
   padding: 20px;
   font-size: 20px;
   font-family: 'Jeju Gothic', serif;
-      color: #464a4e;
+      color: #15181b
 }
