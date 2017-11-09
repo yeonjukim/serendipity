@@ -1,6 +1,7 @@
-.center-btn {
+.right-btn {
     position: relative;
-    top: 80px;
+        float: right;
+
 }
 .custom-color{
   background-color: rgb(7, 89, 177);
@@ -8,11 +9,26 @@
 .p-center {
   text-align: center;
   margin-top: 50px !important;
-  margin-bottom: 50px !important;
+
 }
 .custom-title {
       padding-top: 100px !important;
 }
 .btn-font{
       font-size: 0.85em;
+}
+.select-notice{
+text-align: center;
+}
+.input-form{
+  font-weight: 400;
+padding: 15px 25px;
+letter-spacing: 1px;
+text-transform: uppercase;
+border-radius: 0;
+font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.input-wrap{
+  display: flex;
+      padding: 0 20%;
 }

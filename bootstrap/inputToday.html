@@ -22,33 +22,33 @@
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <link href="css/common.css" rel="stylesheet">
   <script>
-  $(function() {
+    $(function() {
 
-    $('#form').submit(function() {
-      var inputVal = $("#inputNum").val()
-      if (inputVal && isNumeric(inputVal)) {
-        if (inputVal <= 78 && inputVal > 0) {
-          $("#form").attr("action", "resultToday.html");
-          $("#form").submit();
+      $('#form').submit(function() {
+        var inputVal = $("#inputNum").val()
+        if (inputVal && isNumeric(inputVal)) {
+          if (inputVal <= 78 && inputVal > 0) {
+            $("#form").attr("action", "resultToday.html");
+            $("#form").submit();
+          } else {
+            alert("1부터 78까지 숫자를 입력해주세요!");
+          }
         } else {
-          alert("1부터 78까지 숫자를 입력해주세요!");
+          alert("숫자를 입력해 주십시오.");
+          return false;
         }
-      } else {
-        alert("숫자를 입력해 주십시오.");
-        return false;
-      }
+      });
+
     });
 
-  });
-
-  function isNumeric(Num) {
-    var result = false;
-    if (!isNaN(parseInt(Num))) {
-      result = true;
+    function isNumeric(Num) {
+      var result = false;
+      if (!isNaN(parseInt(Num))) {
+        result = true;
+      }
+      return result;
     }
-    return result;
-  }
-</script>
+  </script>
 </head>
 
 <body>
@@ -63,15 +63,17 @@
 
           <div class="post-heading custom-title">
             <h1>Serendipity</h1>
+            <a class="btn btn-primary right-btn custom-color btn-font" href="index.html">Home</a>
             <h3 class="subheading">♣︎ 오늘의 운세 ♣︎</h3>
             <img id="backCard" src="img/cardImage.png" alt="">
             <h3 id="sentence" class="subheading p-center">1부터 78까지의 숫자 중 하나를 입력하세요.</h3>
-            <span class="meta">
-              <form id="form">
-                <input id="inputNum" type="text" name="num" size="14" placeholder="숫자를 입력하세요">
-                <input id="submit" type="submit" name="sub" value="입력">
-              </form></span>
-              <a class="btn btn-primary center-btn custom-color btn-font" href="index.html">Home</a>
+            <p class="select-notice">단, 처음 뽑은 타로가 진짜입니다. 집중하고 숫자를 선택해주세요.</p>
+            <form id="form">
+              <div class="input-wrap">
+                <input id="inputNum" type="text" name="num" size="20" placeholder="숫자를 입력하세요" class="input-form">
+                <button id="submit" type="submit" name="sub" class="btn btn-primary custom-color btn-font">행운을 빌어요 <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

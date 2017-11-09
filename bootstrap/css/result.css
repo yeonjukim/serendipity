@@ -4,8 +4,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 700px;
-      margin-bottom: 100px;
+  height: 800px;
+      margin-bottom: 10%;
 }
 
 #title {
