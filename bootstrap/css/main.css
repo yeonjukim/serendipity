@@ -1,4 +1,18 @@
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@font-face{
+ font-family:'Godo';
+ font-style:normal;
+ font-weight:400;
+ src:url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'),
+     url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+@font-face{
+ font-family:'Godo';
+ font-style:normal;
+ font-weight:700;
+ src:url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'),
+     url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
 
 .main {
   position: relative;
@@ -42,5 +56,14 @@
 }
 
 .main-p {
-  font-size: 1.3em;
+  font-size: 1.2em;
+  font-family: 'Godo';
+  color: rgb(82, 86, 90);
+padding: 0 45px;
+text-align: center;
+margin-top: 10px;
+}
+
+.p-luck{
+      color: #069226;
 }
